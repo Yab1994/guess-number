@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #mode-selection {
+    margin-bottom: 20px;
+  }
+  
+  #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #player1, #player2 {
+    margin: 20px;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #output {
+    margin-top: 20px;
+  }
+  
+  #guesses-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  #guesses-table th, #guesses-table td {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+  }
+  
+  #guesses-table th {
+    background-color: #f2f2f2;
+  }
+  
+  #guesses-table td {
+    text-align: center;
+  }
+  

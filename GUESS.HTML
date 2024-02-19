@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Number Guessing Game</h1>
+  <div id="mode-selection">
+    <button onclick="startGame('single')">Play Single Player</button>
+    <button onclick="startGame('multiplayer')">Play Multiplayer</button>
+  </div>
+  <div id="game-container" style="display: none;">
+    <div id="player1">
+      <h2>Player 1</h2>
+      <input type="text" id="player1Guess" placeholder="Enter your guess">
+      <button onclick="guess('player1')">Guess</button>
+    </div>
+    <div id="player2" style="display: none;">
+      <h2>Player 2</h2>
+      <input type="text" id="player2Guess" placeholder="Enter your guess">
+      <button onclick="guess('player2')">Guess</button>
+    </div>
+    <div id="output"></div>
+    <table id="guesses-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Guess</th>
+          <th>Numbers Correct</th>
+          <th>Positions Correct</th>
+        </tr>
+      </thead>
+      <tbody id="guesses-body">
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
